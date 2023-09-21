@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const fsUtils = require('./helpers/fsUtils');
 const uuid = require('./helpers/uuid')
-const notesData = require('./db/db.json');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -41,6 +40,16 @@ app.post('/api/notes', (req, res) => {
   console.log(userNote)
   res.json("Note was added")
 });
+
+// app.delete(`/api/note/:id`, (req, res) => {
+//   for (let i = 0; i < notesData; i++) {
+//     const currentNote = notesData[i];
+//     if (currentNote === req.params.id) {
+//       res.json(currentNote);
+//       return;
+//     }
+//   }
+// })
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
