@@ -5,7 +5,11 @@ const PORT = 3001;
 
 const app = express();
 
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+// app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/')));
 
 // Route to notes.html
 app.get('/notes', (req, res) => {
@@ -20,11 +24,14 @@ app.get('*', (req, res) => {
 // Create api route for /api/notes
 app.get('/api/notes', (req, res) => {
   res.json(notesData);
+  console.log(notesData);
 });
 
+// POST request to add new note
 app.post('/api/notes', (req, res) => {
   // Let the user know that their POST request was received
   console.info(`${req.method} request received`);
+  
 
   // Destructuring assignment for the items in req.body
   const { title, text } = req.body;
