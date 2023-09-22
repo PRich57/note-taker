@@ -27,6 +27,14 @@
   
   To use this application the user must click the 'Get Started' button on the home page. They will be routed to the notes page where they can view existing notes by clicking on them or add new notes by clicking in the text area that says 'Note Title' and type in the title of their new note, then click in the text area that says 'Note Text' to type in the body of the note they'd like to save. To save the note, the user needs to click on the save icon in the top right corner of the application and they will see it added to the list of existing notes on the left side. If the title and body text areas have notes in them already, the user can click on the plus icon in the top right corner next to the save icon to begin a new note.
   
+## Mock-Up
+
+  The following images show the application's design and functionality.
+
+  ![Image of home page](./public/assets/images/noteTakerScreenshot.png)
+
+  ![Image of notes page](./public/assets/images/noteTakerScreenshot2.png)
+
 ## License
 
   N/A
