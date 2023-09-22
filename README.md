@@ -14,6 +14,7 @@
 
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Mock-Up](#mock-up)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
