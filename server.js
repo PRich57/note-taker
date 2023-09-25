@@ -41,6 +41,7 @@ app.post("/api/notes", (req, res) => {
   res.json("Note was added");
 });
 
+
 app.delete(`/api/notes/:id`, (req, res) => {
   // Convenience variable to store user id input
   const idToDelete = req.params.id;
@@ -48,6 +49,7 @@ app.delete(`/api/notes/:id`, (req, res) => {
   res.json("Note has been deleted!");
 });
 
+// Listens to open server and close server
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
