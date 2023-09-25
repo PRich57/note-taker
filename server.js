@@ -29,6 +29,7 @@ app.get("/api/notes", (req, res) => {
   });
 });
 
+// Create post route
 app.post("/api/notes", (req, res) => {
   const { title, text } = req.body;
   const userNote = {
@@ -41,7 +42,7 @@ app.post("/api/notes", (req, res) => {
   res.json("Note was added");
 });
 
-
+// Create delete route
 app.delete(`/api/notes/:id`, (req, res) => {
   // Convenience variable to store user id input
   const idToDelete = req.params.id;
